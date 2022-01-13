@@ -1,0 +1,60 @@
+.counter {
+    height: 100%;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .counter__title {
+    font-size: 95px;
+  }
+  
+  .counter__title--increment {
+    color: green;
+  }
+  .counter__title--decrement {
+    color: rgb(165, 21, 21);
+  }
+  
+  .buttons {
+    display: flex;
+  }
+  
+  .button {
+    width: 180px;
+    height: 45px;
+  
+    border: none;
+    border-radius: 6px;
+    background-color: var(--color-button-default);
+    font-weight: bold;
+    text-transform: uppercase;
+  
+    margin: 5px;
+  }
+  
+  .button--increment {
+    background-color: green;
+    color: white;
+    cursor: pointer;
+  }
+  .button--increment:hover {
+    background-color: rgb(0, 95, 0)
+  }
+  
+  .button--decrement {
+    background-color: rgb(141, 0, 0);
+    color: white;
+    cursor: pointer;
+  }
+  .button--decrement:hover {
+    background-color: rgb(94, 0, 0);
+  }
+
+  @media screen and (max-width: 400px) {
+    .buttons {
+      flex-direction: column;
+    }
+  } 
